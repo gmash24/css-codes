@@ -1,47 +1,54 @@
 <html>
-    <title>
-        snapping scroll 
-    </title>
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-         
-        }
-        .wrapper{
-            display: block;
-            height: 100vh;
-            scroll-snap-type: y mandatory;
-            overflow: auto;
-        }
-        .section{
-            scroll-snap-align:center;
-            height: 100vh;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            color: white;
-            font-size: 4em;
-            background-color: brown;
-            
-        }
-        .bg-blue{
-            background-color: blue;
-        }
-        .bg-green{
-            background-color: green;
-        }
-        .bg-yellow{
-            background-color:rgb(184, 184, 81);
-        }
-    </style>
-    <body>
-        <div class="wrapper">
+<title>
+    snapping scroll
+</title>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .wrapper {
+        display: block;
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+        overflow: auto;
+    }
+
+    .section {
+        scroll-snap-align: center;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 4em;
+        background-color: brown;
+
+    }
+
+    .bg-blue {
+        background-color: blue;
+    }
+
+    .bg-green {
+        background-color: green;
+    }
+
+    .bg-yellow {
+        background-color: rgb(184, 184, 81);
+    }
+</style>
+
+<body>
+    <div class="wrapper">
         <div class="section">page1</div>
-         <div class="section bg-blue">page 2</div>
-         <div class="section bg-green">page 3</div>
-         <div class="section bg-yellow">page 4</div>
-        </div>
-         
-    </body>
+        <div class="section bg-blue">page 2</div>
+        <div class="section bg-green">page 3</div>
+        <div class="section bg-yellow">page 4</div>
+    </div>
+
+</body>
+
 </html>

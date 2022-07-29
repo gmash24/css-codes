@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>popup on hover</title>
-    </head>
-    <style>
-    *{
+
+<head>
+    <title>popup on hover</title>
+</head>
+<style>
+    * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
     }
-    header{
+
+    header {
         font-family: 'Times New Roman', Times, serif;
         height: 7vh;
         background-color: #111;
         font-size: 14px;
         width: 100%;
     }
-    header h1{
+
+    header h1 {
         font-weight: 100;
         text-align: center;
         text-transform: uppercase;
@@ -24,100 +27,116 @@
         color: #fff;
 
     }
-     
-    .wrapper{
-        margin: 0px;
-            background-color: beige;
-            height: 100vh;
-            width: 100vw;
-            border: 1px solid black;
-           
-        }
-        h2{
-            text-transform: capitalize;
-            color: #111;
-            margin-bottom: 40px;
-        }
-        p{
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 20px;
-            font-size: 14px;
-            width: 350px;
-        }
-        a{
-            text-decoration: none;
-            text-transform: capitalize;
 
-        }
-        .content{
-            margin: auto;
-            padding: 20px;
-            max-width: 1200px;
-            width: 80vw;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-            grid-row-gap: 50px;
-            column-gap: 100px;
-            border: 1px solid rgb(50, 52, 202);
-            
-        }
-        .content .box{
-            padding: 20px;
-            border:  1px solid rgb(227, 14, 14);
-            position: relative;
-            transition: all 0.3s;
-        }
-       .content .box:hover{
+    .wrapper {
+        margin: 0px;
+        background-color: beige;
+        height: 100vh;
+        width: 100vw;
+        border: 1px solid black;
+
+    }
+
+    h2 {
+        text-transform: capitalize;
+        color: #111;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 20px;
+        font-size: 14px;
+        width: 350px;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: capitalize;
+
+    }
+
+    .content {
+        margin: auto;
+        padding: 20px;
+        max-width: 1200px;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 50px;
+        column-gap: 100px;
+        border: 1px solid rgb(50, 52, 202);
+
+    }
+
+    .content .box {
+        padding: 20px;
+        border: 1px solid rgb(227, 14, 14);
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .content .box:hover {
         transition: all 0.5s;
         cursor: pointer;
         box-shadow: -5px 5px 20px;
-       }
-    </style>
-    <body>
-        <header>
-           <h1>Gift Nyanje Masha</h1>
-        </header>
-       
-        <div class="wrapper">
-            <div class="content">
-                <div class="box">
-                    <h2>About Me </h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in ad voluptate!</p>
-                    <a href="read more">read more</a>
-                </div>
+    }
+</style>
 
-                    <div class="box">
-                        <h2>Academic Qualifications</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in ad voluptate!</p>
-                      <a href="read more">read more</a>
-                    </div>
-                
-                
-               
-                    <div class="box">
-                        <h2>Work Experience</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in ad voluptate!</p>
-                        <a href="read more">read more</a>
-                    </div>
-                        
-                    
-                   
-                        <div class="box">
-                            <h2>Referees</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in ad voluptate!</p>
-                            <a href="read more">read more</a>
-                        </div>
+<body>
+    <header>
+        <h1>Gift Nyanje Masha</h1>
+    </header>
 
-            
-                
-               
-                          
-                    </div>
-     
-                
+    <div class="wrapper">
+        <div class="content">
+            <div class="box">
+                <h2>About Me </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi
+                    ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in
+                    ad voluptate!</p>
+                <a href="read more">read more</a>
             </div>
-            
+
+            <div class="box">
+                <h2>Academic Qualifications</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi
+                    ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in
+                    ad voluptate!</p>
+                <a href="read more">read more</a>
+            </div>
+
+
+
+            <div class="box">
+                <h2>Work Experience</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi
+                    ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in
+                    ad voluptate!</p>
+                <a href="read more">read more</a>
+            </div>
+
+
+
+            <div class="box">
+                <h2>Referees</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laudantium tenetur facilis sequi
+                    ipsum dolor dignissimos autem earum ut dolorem nam et labore suscipit temporibus assumenda illo, in
+                    ad voluptate!</p>
+                <a href="read more">read more</a>
+            </div>
+
+
+
+
+
         </div>
-    </body>
+
+
+    </div>
+
+    </div>
+</body>
+
 </html>

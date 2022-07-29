@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <title>
-        spinning triangle page loader with css and html
+<title>
+    spinning triangle page loader with css and html
 </title>
 <style>
-    *{
+    * {
         box-sizing: border-box;
     }
-    body{
+
+    body {
         margin: 0;
         height: 100vh;
         background-color: rgb(144, 0, 255);
@@ -16,14 +17,16 @@
         justify-content: center;
         overflow: hidden;
     }
-    .loading{
+
+    .loading {
         position: relative;
-        height:80px;
+        height: 80px;
         width: 80px;
     }
+
     .loading::after,
-    .loading::before{
-        position:absolute;
+    .loading::before {
+        position: absolute;
         content: '';
         top: 0;
         left: 0;
@@ -31,40 +34,54 @@
         height: 0;
         border: 50px solid transparent;
         border-bottom-color: beige;
-      animation: rotateA 2s linear infinite 0.5s;
+        animation: rotateA 2s linear infinite 0.5s;
     }
-    .loading::before{
-        transform:rotate(90deg);
-        animation: rotateB 2s  infinite linear ;
+
+    .loading::before {
+        transform: rotate(90deg);
+        animation: rotateB 2s infinite linear;
     }
-    @keyframes rotateA{
-        0%,25%{
+
+    @keyframes rotateA {
+
+        0%,
+        25% {
             transform: rotate(0deg);
         }
-        50%,75%{
+
+        50%,
+        75% {
             transform: rotate(180deg);
         }
-        100%{
+
+        100% {
             transform: rotate(360deg);
         }
     }
-    @keyframes rotateB{
-        0%,25%{
+
+    @keyframes rotateB {
+
+        0%,
+        25% {
             transform: rotate(90deg);
         }
-        50%,75%{
+
+        50%,
+        75% {
             transform: rotate(270deg);
         }
-        100%{
+
+        100% {
             transform: rotate(450deg);
         }
     }
-
 </style>
-    <body>
-        <div class="loading">
-            
-        </div>
-        
-    </body>
+
+<body>
+    <div class="loading">
+
+    </div>
+
+</body>
+
 </html>

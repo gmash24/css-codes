@@ -1,0 +1,115 @@
+*::after::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+nav {
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+nav:not(:first-of-type) {
+    margin-top: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 10px;
+
+}
+
+nav button {
+    background-color: rgb(186, 188, 212);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 12px;
+    margin: 0 5px;
+    color: white;
+    text-align: center;
+    min-width: 150px;
+}
+
+nav img {
+    width: 50px;
+}
+
+/* Nav #1 */
+/* Center the Navlinks on X (horizontally) */
+.nav-1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Nav #2 */
+/* Center on Y and display the buttons on the right */
+.nav-2 {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-btn {
+    margin-left: auto;
+}
+
+
+/* Nav #3 */
+/* Center on Y and display the buttons on the right */
+/* adding margin left auto mkes a space between the attributes  */
+.nav-3 {
+    display: flex;
+    align-items: center;
+
+}
+/* selects the first link in the div*/
+.nav-3 a:first-of-type {
+    margin-left: auto;
+}
+
+
+
+
+/* Nav #4 */
+/* Center on Y and display the buttons on the right */
+/* The flex property makes it possible to share the length of attributes btn 2 this forces the logo to b in the middle   */
+.nav-4 {
+    display: flex;
+    align-items: center;
+}
+.nav-4 .links-container{
+    width: 50%;
+}
+.nav-4 .empty-container{
+    width: 50%;
+}
+/* Nav #5 */
+/* Center on Y and display the buttons on the right */
+/* The flex property makes t possible to share the length of attributes btn 3  */
+
+.nav-5 {
+    display: flex;
+    align-items: center;
+}
+.nav-5 .logo-link{
+    width: 100%;
+}
+.container-navlinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.nav-5 .nav-right{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
