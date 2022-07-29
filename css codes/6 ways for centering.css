@@ -1,0 +1,76 @@
+*{  margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(123, 230, 166);
+    margin: 100px auto;
+}
+.b1{background-color:greenyellow ;}
+.b2{background-color:yellow ;}
+.b3{background-color:purple ;}
+.b4{background-color:orange;}
+.b5{background-color:orangered;}
+.b6{background-color:violet ;}
+
+/*6 ways to center the contontents of  div on both the x and y axis*/
+
+/*way 1*/
+.b1 
+{   display: flex;
+    justify-content: center;/*centers on x-axis*/
+    align-items: center;/*centers on y-axis*/
+
+}
+.b1 h1{
+
+}
+/*way 2*/
+.b2 
+{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.b2 h1{
+
+}
+/*way 3*/
+.b3 
+{
+    position: relative;
+
+}
+.b3 h1{
+    position: absolute;
+    top: 50%; /* pushes it 50%from the top*/
+    left: 50%;/* pushes it 50%from the left*/
+    transform: translate(-50%,-50%);/* we do this to make it perfectly center */
+}
+/*way 4*/
+.b4
+{
+    display: flex;
+}
+.b4 h1{
+    margin: auto;/* gives an equla widtth of margin from all sides */}
+/*way 5*/
+.b5 
+{
+    text-align: center;
+}
+.b5 h1{
+    line-height: 200px;/* this puts 100px on the bottom and 100px on the top */
+}
+/*way 6*/
+.b6 
+{
+    display: table;
+    text-align: center;
+}
+.b6 h1{
+    display: table-cell;
+    vertical-align: middle;
+}
