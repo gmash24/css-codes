@@ -69,69 +69,133 @@
                 </li>
             </ul>
         </div>
-        <!-- end of navigation bar -->  
+        <!-- end of navigation bar -->
 
         <!-- new section -->
         <div class="main">
             <div class="topbar">
                 <div class="toggle" onclick=toggleMenu();>
-                   
+
                 </div>
-                    <div class="search">
-                        <label>
-                            
-                            
-                            <input type="text" placeholder="search here" id="">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </label>
-                    </div>
-                    <div class="user"><img src="/image/gift pic.jpg" alt="" srcset=""></div>
-                
+                <div class="search">
+                    <label>
+
+
+                        <input type="text" placeholder="search here" id="">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user"><img src="/image/gift pic.jpg" alt="" srcset=""></div>
+
             </div>
 
             <!-- card container -->
             <div class="cardbox">
                 <div class="card">
-                    
+
                     <div class="cardname">Total Rent</div>
                     <div class="numbers">73000</div>
-                  <div class="iconbox">
-                    <i class="fa fa-money" aria-hidden="true"></i>
-                  </div>
+                    <div class="iconbox">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <div class="card">
-                    
+
                     <div class="cardname">Total tenants</div>
                     <div class="numbers">8</div>
                     <div class="iconbox"> <i class="fa fa-users"></i></div>
                 </div>
                 <div class="card">
-                    
+
                     <div class="cardname">vacant houses</div>
                     <div class="numbers">3</div>
                     <div class="iconbox"><i class="fa fa-home" aria-hidden="true"></i></div>
                 </div>
                 <div class="card">
-                    
+
                     <div class="cardname">Rent uncollected</div>
                     <div class="numbers">14000</div>
-                   <div class="iconbox"><i class="fa fa-money" aria-hidden="true"></i></div>
+                    <div class="iconbox"><i class="fa fa-money" aria-hidden="true"></i></div>
                 </div>
             </div>
-<!-- Tble of payments -->
+            <!-- Tble of payments -->
             <div class="details">
-                <div class="recentpayments"></div>
+                <div class="recentpayments">
+                    <div class="cardheader">
+                        <h2>Recent Payments</h2>
+                        <a href="#">View all</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>House</td>
+                                <td>Amount</td>
+                                <td>D ate</td>
+                                <td>status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Christine wangui</td>
+                        <td>543a</td>
+                        <td>13000</td>
+                        <td>31/5/2022</td>
+                        <td>paid</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            
+            
+                            <tr>
+                                <td>Beatrice wangui</td>
+                        <td>543a</td>
+                        <td>13000</td>
+                        <td>31/5/2022</td>
+                        <td>paid</td>
+                        <td><span class="status delivered">pending</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Chalres wangui</td>
+                        <td>543a</td>
+                        <td>13000</td>
+                        <td>31/5/2022</td>
+                        <td>paid</td>
+                        <td><span class="status return">Delivered</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Eugene wangui</td>
+                        <td>543a</td>
+                        <td>13000</td>
+                        <td>31/5/2022</td>
+                        <td>paid</td>
+                        <td><span class="status delivered">pending</span></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+
+                <div class="recenttenants">
+                    <div class="cardheader">
+                        <h2>Recent Tenants </h2>
+                        <a href="#">View all</a>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>
-   
-        
+
+
 </body>
 <script>
-    function toggleMenu(){
-        let toggle=document.querySelector('.toggle');
-        let navigation=document.querySelector('.navigation');
-        let main=document.querySelector('.main');
+    function toggleMenu() {
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
         toggle.classList.toggle('active')
         navigation.classList.toggle('active')
         main.classList.toggle('active')
