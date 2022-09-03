@@ -75,7 +75,9 @@
         <div class="main">
             <div class="topbar">
                 <div class="toggle" onclick=toggleMenu();>
-
+                    <div>
+                        <i class="fa fa-hamburger" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <div class="search">
                     <label>
@@ -118,12 +120,14 @@
                     <div class="iconbox"><i class="fa fa-money" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <!-- Tble of payments -->
+
+
+            <!-- Table of payments -->
             <div class="details">
                 <div class="recentpayments">
                     <div class="cardheader">
                         <h2>Recent Payments</h2>
-                        <a href="#">View all</a>
+                        <a href="#" class="btn">View all</a>
                     </div>
                     <table>
                         <thead>
@@ -131,50 +135,52 @@
                                 <td>Name</td>
                                 <td>House</td>
                                 <td>Amount</td>
-                                <td>D ate</td>
+                                <td>Date</td>
                                 <td>status</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Christine wangui</td>
-                        <td>543a</td>
-                        <td>13000</td>
-                        <td>31/5/2022</td>
-                        <td>paid</td>
-                        <td><span class="status delivered">Delivered</span></td>
+                                <td>543a</td>
+                                <td>13000</td>
+                                <td>31/5/2022</td>
+                                <td>Paid</td>
+                                <td><span class=" paid">No balance</span></td>
                             </tr>
-                            
-            
+
+
                             <tr>
                                 <td>Beatrice wangui</td>
-                        <td>543a</td>
-                        <td>13000</td>
-                        <td>31/5/2022</td>
-                        <td>paid</td>
-                        <td><span class="status delivered">pending</span></td>
+                                <td>543a</td>
+                                <td>13000</td>
+                                <td>31/5/2022</td>
+                                <td>Paid</td>
+                                <td><span class="pending">Pending balance</span></td>
                             </tr>
-                        
+
                             <tr>
                                 <td>Chalres wangui</td>
-                        <td>543a</td>
-                        <td>13000</td>
-                        <td>31/5/2022</td>
-                        <td>paid</td>
-                        <td><span class="status return">Delivered</span></td>
+                                <td>543a</td>
+                                <td>13000</td>
+                                <td>31/5/2022</td>
+                                <td>paid</td>
+                                <td><span class="paid ">No balance</span></td>
                             </tr>
-                        
+
                             <tr>
                                 <td>Eugene wangui</td>
-                        <td>543a</td>
-                        <td>13000</td>
-                        <td>31/5/2022</td>
-                        <td>paid</td>
-                        <td><span class="status delivered">pending</span></td>
+                                <td>543a</td>
+                                <td>13000</td>
+                                <td>31/5/2022</td>
+                                <td>Not Paid</td>
+                                <td><span class="due">Balance</span></td>
                             </tr>
                         </tbody>
-                        
+
                     </table>
+
+
                 </div>
 
                 <div class="recenttenants">
@@ -182,6 +188,53 @@
                         <h2>Recent Tenants </h2>
                         <a href="#">View all</a>
                     </div>
+                    <table>
+                        <tbody>
+                            <tr>
+
+                                <td width="60px">
+                                    <div class="imagebox"><img src="./image/pet.svg" alt="" srcset=""></div>
+                                </td>
+                                <td>
+                                    <h4>Christine<br> <span>House 543</span></h4>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td width="60px">
+                                    <div class="imagebox"><img src="./image/pet.svg" alt="" srcset=""></div>
+                                </td>
+                                <td>
+                                    <h4>Mary<br> <span>House 542</span></h4>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td width="60px">
+                                    <div class="imagebox"><img src="./image/doggo.jpg" alt="" srcset=""></div>
+                                </td>
+                                <td>
+                                    <h4>Charles<br> <span>House 541</span></h4>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td width="60px">
+                                    <div class="imagebox"><img src="./image/cat.jpg" alt="" srcset=""></div>
+                                </td>
+                                <td>
+                                    <h4>Beatrice<br> <span>House 540</span></h4>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
 
 
                 </div>

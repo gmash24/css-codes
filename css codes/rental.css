@@ -253,13 +253,12 @@ body {
     width: 100%;
     padding: 20px;
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: 2fr,1fr;
     
 }
 .recentpayments{
      position: relative;
-     display: grid;
-     min-height: 530px;
      background-color: #fff;
      padding: 20px;
 }
@@ -268,3 +267,125 @@ body {
     justify-content: space-between;
     align-items: flex-start;
   }
+  .cardheader h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .btn
+  {
+    position: relative;
+    padding: 5px 10px;
+    background: #03a9f4;
+    color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  .details table{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .details table thead td{
+    font-weight: 600;
+
+  }
+  .details .recentpayments table tr{
+    
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .details .recentpayments table tr:hover{
+    background-color: #03a9f4;
+    color: #fff;
+  }
+  .details .recentpayments table tbody tr:last-child{
+border-bottom: none;
+  }
+  .details .recentpayments table tr td{
+    padding: 9px 5px;
+  }
+  .details .recentpayments table tbody tr td:last-child{
+      text-align: center; 
+  }
+  .details .recentpayments table thead tr td:nth-child(2),
+   .details .recentpayments table tbody tr:nth-child(2){
+    
+    padding-right: 20px;
+  }
+ .paid
+ {
+    background-color:green;
+    border-radius: 4px;
+    padding: 2px 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+ }
+
+.pending{
+    background: #f9ca3f;
+    border-radius: 4px;
+    padding: 2px 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.due{
+    background: red;
+    border-radius: 4px;
+    padding: 2px 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.recenttenants
+{   background-color: #fff;
+    position:relative;
+    display: grid;
+    padding: 20px;
+    border-radius: 20px;
+}
+.recenttenants table{
+    position: relative;
+
+}
+.recenttenants .imagebox{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius:  50%; 
+    overflow: hidden;
+     
+
+}
+.recenttenants table .imagebox img{
+    left: 0;
+   top: 0;
+   position: absolute; 
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+}
+.recenttenants table tr :hover {
+    background-color: #03a9f4;
+    color: #fff;
+}
+.recenttenants table tr td{
+    padding: 7px 10px ;
+}
+.recenttenants table tr td h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+
+}
+.recenttenants table tr td h4 span{
+    font-size: 14px;
+    color: #999;
+}
