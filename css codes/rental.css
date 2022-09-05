@@ -20,7 +20,6 @@ body {
     height: 100%;
     width: 300px;
     background-color: #0396a6;
-    border-right: 20px;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
@@ -110,7 +109,7 @@ body {
 
 .main {
     min-height: 100vh;
-    position: absolute;
+    position: relative;
     background-color: #f5f5f5;
     width: calc(100% - 300px);
     left: 300px;
@@ -145,7 +144,7 @@ body {
 
 .toggle::before {
     content: '';
-    position: absolute;
+    position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     height: 100%;
@@ -153,6 +152,11 @@ body {
     font-size: 24px;
     text-align: center;
     color: black;
+}
+
+.toggle .menu .fa {
+    height: 60px;
+    width: 60px;
 }
 
 .search {
@@ -213,7 +217,7 @@ body {
     padding: 20px;
     position: relative;
     width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background-color: #f2f2f2;
     height: 100%;
     grid-gap: 20px;
@@ -245,87 +249,100 @@ body {
     font-size: 1em;
     font-weight: 500;
 }
+
 .iconbox {
     font-size: 2em;
     color: #0396a6;
 }
-.details{
+
+.details {
     padding-top: 0;
     position: relative;
     width: 100%;
     padding: 20px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr,1fr;
-    
+    grid-template-columns: 2fr 1fr;
+
 }
-.recentpayments{
-     position: relative;
-     background-color: #fff;
-     padding: 20px;
+
+.recentpayments {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
 }
-  .cardheader{
+
+.cardheader {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  .cardheader h2{
+}
+
+.cardheader h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2em;
     font-weight: 500;
-  }
-  .btn
-  {
+}
+
+.btn {
     position: relative;
     padding: 5px 10px;
     background: #03a9f4;
     color: #f2f2f2;
     text-decoration: none;
     border-radius: 6px;
-  }
-  .details table{
+}
+
+.details table {
     position: relative;
     width: 100%;
     margin-top: 10px;
-  }
-  .details table thead td{
+}
+
+.details table thead td {
     font-weight: 600;
 
-  }
-  .details .recentpayments table tr{
-    
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-  .details .recentpayments table tr:hover{
+}
+
+.details .recentpayments table tr {
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentpayments table tr:hover {
     background-color: #03a9f4;
     color: #fff;
-  }
-  .details .recentpayments table tbody tr:last-child{
-border-bottom: none;
-  }
-  .details .recentpayments table tr td{
+}
+
+.details .recentpayments table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.details .recentpayments table tr td {
     padding: 9px 5px;
-  }
-  .details .recentpayments table tbody tr td:last-child{
-      text-align: center; 
-  }
-  .details .recentpayments table thead tr td:nth-child(2),
-   .details .recentpayments table tbody tr:nth-child(2){
-    
+}
+
+.details .recentpayments table tbody tr td:last-child {
+    text-align: center;
+}
+
+.details .recentpayments table thead tr td:nth-child(2),
+.details .recentpayments table tbody tr:nth-child(2) {
+
     padding-right: 20px;
-  }
- .paid
- {
-    background-color:green;
+}
+
+.paid {
+    background-color: green;
     border-radius: 4px;
     padding: 2px 5px;
     color: white;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
- }
+}
 
-.due{
+.due {
     background: red;
     border-radius: 4px;
     padding: 2px 5px;
@@ -334,51 +351,160 @@ border-bottom: none;
     font-weight: 300;
     letter-spacing: 1px;
 }
-.recenttenants
-{   background-color: #fff;
-    position:relative;
+
+.recenttenants {
+    background-color: #fff;
+    position: relative;
     display: grid;
     padding: 20px;
     border-radius: 20px;
 }
-.recenttenants table{
+
+.recenttenants table {
     position: relative;
 
 }
-.recenttenants .imagebox{
+
+.recenttenants .imagebox {
     position: relative;
     height: 50px;
     width: 50px;
-    border-radius:  50%; 
+    border-radius: 50%;
     overflow: hidden;
-     
+
 
 }
-.recenttenants table .imagebox img{
+
+.recenttenants table .imagebox img {
     left: 0;
-   top: 0;
-   position: absolute; 
-   cursor: pointer;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
 }
-.recenttenants table tr :hover,.recenttenants table tr td h4 span:hover {
+
+.recenttenants table tr :hover,
+.recenttenants table tr td h4 span:hover {
     background-color: #03a9f4;
     color: #fff;
 }
-.recenttenants table tr td{
-    padding: 7px 10px ;
+
+.recenttenants table tr td {
+    padding: 7px 10px;
 }
-.recenttenants table tr td h4{
+
+.recenttenants table tr td h4 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2em;
 
 }
-.recenttenants table tr td h4 span{
+
+.recenttenants table tr td h4 span {
     font-size: 14px;
     color: black;
+}
+
+/* making it responsive */
+
+@media (max-width:992px) {
+
+
+    .navigation.active {
+        left: 0;
+        width: 300px;
+
+    }
+
+    .navigation {
+        left: -300;
+    }
+
+    .main {
+        width: 100%;
+        left: 0;
+    }
+
+    .main.active {
+        width: calc(100% - 300px);
+        left: 300px;
+
+    }
+
+    .cardbox {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
+
+}
+
+
+@media (max-width:768px) {
+
+
+
+    .navigation.active {
+        left: 0;
+        width: 300px;
+    }
+
+    .details {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardheader h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:480px) {
+    .cardbox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .details .recentpayments {
+        overflow-x: auto;
+    }
+
+    .details .recentpayments table {
+        width: 600px;
+    }
+
+    .navigation.active {
+        width: 100%;
+        left: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    .toggle.active {
+        z-index: 1000;
+        right: 0;
+        left: initial;
+        position: fixed;
+    }
+
+    .toggle.active::before {
+        color: #f5f5f5;
+    }
+
+    .main,
+    .main.active {
+        width: 100%;
+        left: 0;
+    }
 }
