@@ -16,12 +16,12 @@ body {
 .box {
   position: absolute;
   color: #fff;
-  
   width: 400px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   
 }
+/* area around the typing box */
 .box .passwrd {
   width: 100%;
   position: relative;
@@ -31,6 +31,7 @@ body {
   margin-top: 40px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
+/* actual typing box */
 .box .passwrd input {
   width: 100%;
   color: #333;
@@ -40,6 +41,7 @@ body {
   padding: 10px 5px;
   border: none;
 }
+/* space for putting the eye */
 .box .passwrd #toggleview {
   position: absolute;
   width: 34px;
@@ -53,14 +55,17 @@ body {
   align-items: center;
   display: flex;
 }
+/* puts an open eye */
 .box .passwrd #toggleview::before {
   content: '\f06e';
   font-family:fontawesome;
 }
-.box .passwrd #toggleview .hide::before {
+/* puts a closed eye */
+.box .passwrd #toggleview.hide::before {
   content: '\f070';
   font-family: fontawesome;
 }
+/* criteria list container */
 .box .validation {
   padding: 10px;
   background: #376488;
@@ -69,12 +74,14 @@ body {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
+/* criteria list body */
 .validation ul {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+/* sentences of the criteria list */
 .validation ul li {
   list-style: none;
   position: relative;
@@ -82,6 +89,7 @@ body {
   font-size: 0.85em;
   transition: 0.5s;
 }
+/* puts a bullet icon before the list */
 .validation ul li::before {
   content: "\f192 ";
   width: 20px;
@@ -89,10 +97,13 @@ body {
   height: 10px;
   font-family: fontawesome;
 }
-.validation ul li .valid{
+/* makes the text grey is criteria is met */
+.validation ul li.valid{
     color: rgba(255, 255, 255,0.5);
 }
-.validation ul li .valid::before{
+/* puts a green tick if criteria is met */
+.validation ul li.valid::before{
     content: '\f00c ';
     color: #0f0;
+
 }
