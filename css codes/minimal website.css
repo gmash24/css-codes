@@ -43,47 +43,145 @@ nav ul li a {
 
 /* first section  */
 #home {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    position: relative;
-    background-image: url(/image/citynight.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-image: url(/image/citynight.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
- #home h1,h5,a{
-   z-index: 10;
-    color: #f2f2f2;
- }
- #home h1{
-    font-size: 80px;
-    position: absolute;
-    top: 200px;
-    left: 460px;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: lighter;
- }
- #home h5{
+#home h1,
+h5,
+a {
+  z-index: 10;
+  color: #f2f2f2;
+}
+#home h1 {
+  font-size: 80px;
+  position: absolute;
+  top: 200px;
+  left: 460px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+#home h5 {
+  font-size: 20px;
+  position: absolute;
+  top: 300px;
+  left: 560px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+#home a {
+  padding: 10px 20px 10px;
+  position: absolute;
+  top: 350px;
+  left: 600px;
+  border: 2px solid white;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+}
 
+/* section 2 */
+#text {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: #e8eff5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#text h1 {
+  font-size: 60px;
+  position: absolute;
+  top: 200px;
+  width: 50px;
+  left: 150px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#text h1 span {
+  display: block;
+}
+.little-box {
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  top: 430px;
+  left: 150px;
+
+  border: 5px solid #e8eff5;
+
+  box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff ,inset 4px 4px 8px rgba(209,217,230,0.2),
+  inset -8px -8px  rgba(255,255,255,0.2);
+  border: 1px solid black;
+  border: 1px;
+}
+
+.little-box p{
     font-size: 20px;
-    position: absolute;
-    top: 300px;
-    left: 560px;
-    text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 20px;
+    font-weight: bold;
+    padding: 10px;
     font-weight: lighter;
- }
- #home a{
-   padding: 10px 20px 10px;
-    position: absolute;
-    top: 350px;
+    line-height: 1.5;
+    font-family: sans-serif;
+
+}
+#text .big-box{
+    position: relative;
+    top: 200px;
     left: 600px;
-    border: 2px solid white ;
-    background: transparent;
-    text-transform: uppercase;
+    width: 400px;
+    height: 300px;
+    border: 10px solid #e8eff5;
+
+    box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff ,inset 4px 4px 8px rgba(209,217,230,0.2),
+    inset -8px -8px  rgba(255,255,255,0.2);
+
+     border: 1px solid rgba(255, 255, 255,0.3);
+}
+
+#text .big-box h1 {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  width: 400px;
+  font-size: 40px;
     font-family: sans-serif;
-    font-weight: lighter;
-    text-decoration: none;
- }
+  text-transform: uppercase;
+
+}
+#text .big-box h1 span {
+  display: block;
+}
+#text .big-box p {
+  position: absolute;
+  top: 120px;
+  width: 350px;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  left: 300px;
+  line-height: 1.5;
+}
+#text .big-box h3{
+position: absolute;
+ font-weight: bold;
+  top: 30px;
+  left: 100px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+}
