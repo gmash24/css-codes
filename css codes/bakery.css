@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+h1 {
+  background: rgba(151, 255, 0, 0.8);
+  background: linear-gradient(
+    90deg,
+    rgba(151, 255, 0, 1) 33%,
+    rgba(54, 54, 201, 1) 85%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  position: fixed;
+  height: 100px;
+  position: relative;
+  background: pink;
+  color: white;
+ z-index: 1;
+  justify-content: center;
+
+}
+nav .menu-links {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  left: 100px;
+  line-height: 2.5;
+  margin-left: 30px;
+}
+nav .logo {
+  position: absolute;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: black;
+}
+nav .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+.menu-links ul li {
+  list-style: none;
+  position: relative;
+  color: white;
+  display: inline-block;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px 30px;
+}
+nav ul li a {
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 20px;
+  color: white;
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.search,
+.cart {
+  top: 40px;
+  position: absolute;
+  line-height: -2.5;
+  font-size: 20px;
+}
+.search {
+  position: absolute;
+  right: 150px;
+}
+
+.cart {
+  position: absolute;
+  right: 50px;
+}
+.text {
+  position: absolute;
+  top: 420px;
+  left: 650px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.text .subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid black;
+  width: 80px;
+  margin: 0 10px 0 0;
+  transform: translate(-4px);
+}
+.title {
+  font-size: 100px;
+  text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.para {
+  color: black;
+  font-size: 18px;
+  margin-top: 40px;
+  line-height: 2;
+}
+.readmore {
+  display: inline-block;
+  color: black;
+  margin-top: 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.image {
+  position: absolute;
+  top: 350px;
+  right: 100px;
+  transform: translateY(-50%);
+  background: url(/image/cake\ 3.jpg) no-repeat center center/cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+
+}
+
+/* overlays */
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: aqua;
+}
+.first{
+top: 0;
+}
+.second{
+    top: 33.3%;
+}
+.third
+{
+    top: 66.6%;
+}

@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/36233295b7.js" crossorigin="anonymous"></script>
 
+
+    <!-- gsap link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+        integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css codes/bakery.css">
     <title>bakery
@@ -23,46 +29,120 @@
             </div>
             <div class="menu-links">
                 <ul>
-                    <li>home</li>
-                    <li>cakes</li>
-                    <li>pastry</li>
-                    <li>about us</li>
-                    <li>contact us</li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">h ome</a></li>
+                    <li><a href="#">home</a></li>
+
                 </ul>
             </div>
-
+            <!-- icons -->
             <div class="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
-
-                <div class="cart"> <i class="fa fa-shopping-basket" aria-hidden="true"></i></div>
-                <!-- attach 2 icons -->
             </div>
+            <div class="cart"> <i class="fa fa-shopping-basket" aria-hidden="true"></i></div>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="text">
-            <p class="subtitle">The bakery shop</p>
-            <h1 class="title">
-                <span>Sweet CAKES </br>
-                    FOR YOU</span>
-            </h1>
-            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo iusto, dicta vel expedita modi quidem
-                exercitationem sed ullam vero ratione temporibus veritatis dignissimos, minima, accusamus ea. Cupiditate
-                natus nostrum quae?</p>
-                <a href="#">Scroll for More</a>
-        </div>
-
-        <div class="image">
-            <div class="imagecakeclass">
-                <!-- insert cake image here -->
-            </div>
-
-        </div>
-
-
-
+    <div class="text">
+        <p class="subtitle">The bakery shop</p>
+        <h1 class="title">
+            <span>Sweet CAKES </br>
+                FOR YOU</span>
+        </h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo iusto, dicta vel expedita
+            modi quidem
+            exercitationem sed ullam vero ratione temporibus veritatis dignissimos, minima, accusamus ea. Cupiditate
+            natus nostrum quae?</p>
+        <a href="#" class="readmore">Scroll for More</a>
     </div>
+
+    <div class="image"></div>
+
+    <!-- <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div> --> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+        integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/CustomEase.min.js"
+        integrity="sha512-hbQmmb7bQqddli9xtlxqYrMHrj50L6h2sGzBIL1dDp689fbtBsrO43D6bexbJ55Uaerlm0YTSJd8Ch9QODP0Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/EaselPlugin.min.js"
+        integrity="sha512-X/WdKan20RO0xC9GcuHLG91xtRquAU2UYCtOhMhO044HYU0jd44nDw7cE/iwLetnqyqo2+aeLnlAqm3ik/k+Fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/CSSRulePlugin.min.js"
+        integrity="sha512-WmIFc2KnjfdlxbNwOApiTUtM6TwCz985/6yKTfFqC8Nq7H/VUMfJ897tEGx6SKSxLQbxilffKEcaGhbtBhGmng=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+        Tweenmax.from('.logo', 1,
+            {
+                delay: 1.2,
+                x: -20,
+                opacity: 0,
+                ease: Expo.easeInOut
+            })
+        Tweenmax.staggerfrom('.menu-links ul li', 1, {
+            delay: 1.2,
+            opacity: 0,
+            y: -20,
+            ease: Expo.easeInOut
+        })
+
+        Tweenmax.to('. first', 1.5, {
+            delay: 1.2,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        Tweenmax.to('.overlay first', 1.5, {
+            delay: 1.2,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Tweenmax.to('.first', 1.5, {
+            delay: 1.2,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        Tweenmax.to('.second', 1.5, {
+            delay: 0.4,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+        Tweenmax.to('.third', 1.5, {
+            delay: 0.6,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+    </script>
+
+
+
+
 
 
 
