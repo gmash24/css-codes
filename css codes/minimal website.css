@@ -62,16 +62,26 @@ a {
   font-size: 80px;
   position: absolute;
   top: 200px;
-  left: 460px;
+  left: 120px;
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: lighter;
 }
-#home h5 {
-  font-size: 20px;
+#home .name{
+  font-size: 80px;
   position: absolute;
   top: 300px;
-  left: 560px;
+  left: 160px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+
+}
+#home h5 {
+  font-size: 30px;
+  position: absolute;
+  top: 430px;
+  left: 260px;
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: lighter;
@@ -79,14 +89,19 @@ a {
 #home a {
   padding: 10px 20px 10px;
   position: absolute;
-  top: 350px;
-  left: 600px;
+  top: 550px;
+  left: 400px;
   border: 2px solid white;
   background: transparent;
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: lighter;
+  border-radius: 10px;
   text-decoration: none;
+}
+#home a:hover{
+  background-color: #e8eff5;
+  color: #303030;
 }
 
 /* section 2 */
@@ -116,7 +131,7 @@ a {
 .little-box {
   position: absolute;
   width: 200px;
-  height: 70px;
+  height: 100px;
   top: 430px;
   left: 150px;
 
