@@ -46,13 +46,24 @@ body{
 }
 circle{
     fill: none;
+    /* refrence the gradient tool in the svg code lineargradient */
     stroke: url(#GradientColor);
+    /* creates width of the color */
     stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 0;
+    /* displays the color of the gradient */
+    stroke-dasharray: 472; 
+/* hides the color of the gradient  */
+    stroke-dashoffset: 472;
+    animation: anime 2s linear forwards;
 }
  svg{
     position:absolute;
     top: 0;
     left: 0;
+ }
+ @keyframes anime{
+    100%{
+        stroke-dashoffset: 165;
+    }
+
  }
