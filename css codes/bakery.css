@@ -134,6 +134,7 @@ nav ul li a {
   font-size: 18px;
   margin-top: 40px;
   line-height: 2;
+  font-weight: 500;
 }
 .readmore {
   display: inline-block;
