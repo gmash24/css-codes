@@ -139,16 +139,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .toggle {
     position: relative;
+    left: 0;
     height: 60px;
     width: 60px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     cursor: pointer;
-}
 
+}
+.toggle .fa{
+    font-size: 34px;
+    margin-left: 8px;
+    
+}
 
 .toggle::before {
     content: '';
@@ -166,6 +176,7 @@ body {
 
 .search {
     width: 400px;
+    
     position: relative;
     margin: 0 10px;
     align-items: center;
