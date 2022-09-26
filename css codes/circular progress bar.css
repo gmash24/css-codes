@@ -134,13 +134,14 @@ circle {
 
 
 
-
+/* very important */
 svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 /* animation for the  */
+/* very important */
 @keyframes anime1 {
   100% {
     stroke-dashoffset: 165;
