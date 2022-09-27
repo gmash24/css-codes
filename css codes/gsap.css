@@ -41,7 +41,7 @@ body{
 
 }
 .container .menu{
-    left: 30px;
+    left: -100px;
 }
 .container .profile{
     right: 30px;
