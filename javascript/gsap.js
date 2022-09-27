@@ -21,13 +21,12 @@ back.addEventListener("click", () => {
 t1.play();
 
 
-
-
 // menu icon moves left
 t1.to(".menu",
     {
         ease: "elastic.out(1,.8)",
         left: 30,
+        
         duration: 1.5,
     },0.3);
 // image moves up 
@@ -35,6 +34,7 @@ t1.to(".menu",
     {
         ease: "elastic.out(1,.8)",
         top: '10%',
+        scaleX: 3,
         duration: 1.5,
     }, 0.3);
 
@@ -72,7 +72,7 @@ t1.to(".menu",
     );
 
 
-
+    
     // on clicking
     // makes sprite go up and disappear
     t2.to('.image1',{
