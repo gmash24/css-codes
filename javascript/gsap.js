@@ -1,6 +1,10 @@
+
+//declared the constructors
+
 const buy = document.querySelector('.buy');
 const back = document.querySelector('.back-button');
 
+//declared the variable
 let t1 = gsap.timeline({ paused: true, reversed: true });
 let t2 = gsap.timeline({ paused: true, reversed: true });
 
@@ -67,6 +71,9 @@ t1.to(".menu",
         },0.6
     );
 
+
+
+    // on clicking
     // makes sprite go up and disappear
     t2.to('.image1',{
         ease:'elastic.out(1,.8)',
