@@ -123,7 +123,7 @@ t1.to(".menu",
         scale:0,
         duration:0.3,  
     },0);
-    
+
     // transforms the black buy to fit half the screen on click
     t2.to(".buy ",{
         ease:"power1.inOut",
@@ -132,3 +132,37 @@ t1.to(".menu",
         duration:0.3,  
     },0);
     
+    // back button goes down
+    t2.to(".back-button ",{
+        ease:"elastic.out(1, .8)",
+      bottom:"5%",
+        duration:1.5,  
+    },0.7);
+
+    // second image slides in 
+    t2.to(".image-2",{
+        ease:"elastic.out(1, .8)",
+     left:"50%",
+        duration:1.5,  
+    },0.7);
+
+    // title slides in
+    t2.to(".container h2",{
+        ease:"elastic.out(1, .8)",
+     left:"60%",
+        duration:1.5,  
+    },0.7);
+
+    //first paragragh slides in
+    t2.to(".summary",{
+        ease:"elastic.out(1, .8)",
+     left:"52%",
+        duration:1.5,  
+    },0.6);
+
+    //second paragraph slides in
+    t2.to(".summary-2",{
+        ease:"elastic.out(1, .8)",
+     left:"52%",
+        duration:1.5,  
+    },0.6);

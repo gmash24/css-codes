@@ -96,3 +96,49 @@ body{
     transform: translate(-50%,-50%);
 
  }
+ .container .back-button{
+   font-size: 24px;
+   color: rgba(255, 255, 255, 0.46);
+   position: absolute;
+   bottom: 25%; 
+   cursor: pointer;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+ }
+ .container .image-2{
+    position:absolute;
+    height: 200px;
+    top: 10%;
+    left: -50%;
+    transform: translate(-50%);
+
+ }
+
+ .container h2{
+    position:absolute;
+    top: 38%;
+    left: -60%;
+    transform: translate(-50%);
+    width: 100%;
+    color: #fff;}
+
+    .container .summary{
+        position:absolute;
+        top: 46%;
+        left: -52%;
+        font-weight: 600;
+        opacity: 0.8;
+        transform: translate(-50%);
+        width: 83%;
+        color: #fff;}
+
+        .container .summary-2{
+            position:absolute;
+            top: 46%;
+            left: -52%;
+            font-weight: 600;
+            opacity: 0.8;
+            transform: translate(-50%);
+            width: 83%;
+            color: #fff;}
+    
+        
