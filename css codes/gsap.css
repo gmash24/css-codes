@@ -41,10 +41,10 @@ body{
 
 }
 .container .menu{
-    left: 20px;
+    left: 10px;
 }
 .container .profile{
-    right: 30px;
+    right: 40px;
 }
 .container h1{
     font-weight: 600;
@@ -71,7 +71,7 @@ body{
     font-size: 14px;
     font-weight: 600;
 }
- .buy{
+.buy{
     background: #17202c;
     height: 50px;
     width: 50px;

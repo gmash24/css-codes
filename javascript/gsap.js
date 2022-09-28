@@ -1,7 +1,6 @@
 
 //declared the constructors
-
-const buy = document.querySelector('.buy');
+const buy = document.querySelector(".buy");
 const back = document.querySelector('.back-button');
 
 //declared the variable
@@ -9,12 +8,12 @@ let t1 = gsap.timeline({ paused: true, reversed: true });
 let t2 = gsap.timeline({ paused: true, reversed: true });
 
 
-buy.addEventListener("click", () => {
+buy.addEventListener("click", (e) => {
     t2.play();
 });
 
 
-back.addEventListener("click", () => {
+back.addEventListener("click", (e) => {
     t2.reversed();
 });
 
@@ -24,17 +23,17 @@ t1.play();
 // menu icon moves left
 t1.to(".menu",
     {
-        ease: "elastic.out(1,.8)",
+        ease: "elastic.out(1, .8)",
         left: 30,
-        
         duration: 1.5,
     },0.3);
+
 // image moves up 
-    t1.to(".image1",
+    t1.to(".image-1",
     {
-        ease: "elastic.out(1,.8)",
+        ease: "elastic.out(1, .8)",
         top: '10%',
-        scaleX: 3,
+       rotate:0,
         duration: 1.5,
     }, 0.3);
 
@@ -51,7 +50,7 @@ t1.to(".menu",
     t1.to(".container h1",
     {
         ease: "elastic.out(1,.8)",
-        bottom: 50,
+        bottom: "50%",
         duration: 1.5,
     },0.3);
 
@@ -59,7 +58,7 @@ t1.to(".menu",
     t1.to(".container p",
     {
         ease: "elastic.out(1,.8)",
-        bottom: 20,
+        bottom: "20%",
         duration: 1.5,
     },0.4);
 
@@ -72,11 +71,15 @@ t1.to(".menu",
     );
 
 
-    
+
+
+//
+//          SECOND PART OF THE TRANSITION PHASE
+  //  
     // on clicking
     // makes sprite go up and disappear
     t2.to('.image1',{
-        ease:'elastic.out(1,.8)',
+        ease:'elastic.out(1, .8)',
         top:'-60%',
         duration:2,
     }
@@ -103,13 +106,29 @@ t1.to(".menu",
     t2.to(".container h1",
     {
         ease: "elastic.out(.5,.8)",
-        bottom: "-50%",
-        duration: 1.5,
+        bottom: "-25%",
     },0);
 
     //paragraph moves lower and disaapers
     t2.to(".container p",
     {
-        ease: "elastic.out(1,.8)",
-        bottom: '-20',
+        ease: "elastic.out(1, .8)",
+        bottom: '-20%',
     },0);
+
+
+    // makes the icon pop
+    t2.to(".buy i",{
+        ease:"power1.inOut",
+        scale:0,
+        duration:0.3,  
+    },0);
+    
+    // transforms the black buy to fit half the screen on click
+    t2.to(".buy ",{
+        ease:"power1.inOut",
+        scaleY:16,
+        width:378,
+        duration:0.3,  
+    },0);
+    
