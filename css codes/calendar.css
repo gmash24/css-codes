@@ -46,8 +46,8 @@ body{
     height: max-content;
     width: max-content;
     padding: 20px;
-    background: var(--light-body);
-   
+    background: var(--light-main);
+   box-shadow: var(--shadow);
     overflow: hidden;
 
 }
