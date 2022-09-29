@@ -21,23 +21,77 @@
     --blue:#0000ff;
     --white:#fff;
     --shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    
 
+}
+.dark{
+    --bg-body:var(--dark-body);
+    --bg-main:var(--bg-main);
+    --bg-second:var(--dark-secondary);
+    --color-hover:var(--dark-hover);
+    --color-txt:var(--light-text);
 }
 body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #3c3c3c;
+    background-color: var(--bg-body);
 
 }
 .calendar
-{   display: flex;
+{   display: grid;
     position: relative;
     border-radius: 20px;
-    height: 200px;
-    width: 300px;
-    background: #f8f8f8;
-    box-shadow: 0 2px 2px 1.2px;
+    height: max-content;
+    width: max-content;
+    padding: 20px;
+    background: var(--light-body);
+   
+    overflow: hidden;
 
+}
+.light.calendar{
+    box-shadow: var(--shadow);
+
+}
+.calendar-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-txt);
+    
+}
+.calendar-body{
+    padding: 10px;
+}
+.calendar-week-day{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    font-weight: 500;
+    
+}
+.calendar-week-day div{
+    display: grid;
+    place-items: center;
+}
+
+.calendar-days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 2px;
+    color: var(--color-txt);
+}
+.calendar-days div{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
 }
