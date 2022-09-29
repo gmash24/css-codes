@@ -72,6 +72,7 @@ body{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     font-weight: 500;
+    height: 50px;
     
 }
 .calendar-week-day div{
@@ -94,4 +95,69 @@ body{
     justify-content: center;
     padding: 5px;
     cursor: pointer;
+}
+.month-picker{
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.month-picker:hover{
+    background: var(--light-hover);
+}
+.year-picker{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+  
+}
+.year-change:hover{
+    background: var(--light-hover);
+}
+.year-change{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    display: grid;
+}
+
+.calendar-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.toggle{
+    display: flex;
+}
+.toggle span{
+    margin-right: 10px;
+    color: var(--light-text);
+}
+.dark-mode-switch{
+    position: relative;
+    width: 48px;
+    height: 25px;
+    border-radius: 14px;
+    background: #79788c;
+    cursor: pointer;
+}
+.dark-mode-switch-ident{
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: var(--light-body);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.2 ease-in-out ;
+
+}
+.dark .dark-mode-switch .dark-mode-switch-ident{
+    top: 2px;
+    left: calc(2px + 50%);
+
 }
