@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css codes/calendar.css">
 </head>
 
-<body class="light">
+<body class="dark">
     <div class="calendar">
         <!-- calendar header -->
         <div class="calendar-header">
@@ -79,121 +79,7 @@
                     <span></span>
                     <span></span>
                 </div>
-                <div class="">8<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">9<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">10<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">11<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">12<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">13<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">14<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">15<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">16<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">17<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">18<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">19<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">20<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">21<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">22<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">23<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">24<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">25<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">26<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">27<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">28<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">29<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="">30<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                
             </div>
 
             <!-- calendar footer -->
@@ -216,9 +102,11 @@
 </body>
 <script>
     // switching to dark mode
-    document.querySelector('.dark-mode-switch').onclick = () => {
+    document.querySelector('.dark-mode-switch').onclick = () =>
+     {
         document.querySelector('body').classList.toggle('dark')
         document.querySelector('.body').classList.toggle('light')
+     }
         //check leap year
         isleapyear = (year) => {
             return (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year & 400 === 0)
@@ -226,46 +114,96 @@
         getfebdays = (year) => {
             return isleapyear(year) ? 29 : 28
         }
-        let calendar = document.querySelector('.calendar')
 
+        let calendar = document.querySelector('.calendar')
         const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
+        let month_picker = document.querySelector('#month-picker')
+
+
+        month_picker.onclick =() =>{
+            month_list.classList.add('show')
+
+        }
         //Genearate calendar
 
-        generatecalendar = (month, year) => {
-
+        generatecalendar = (month, year) => 
+        {
             let calendar_days = document.querySelector('.calendar-days')
             calendar_days.innerHTML = ''
-            let calendar_years = document.querySelector('#yeaar')
+            let calendar_header_year = document.querySelector('#year')
 
+            // creates array of the no of days in each month
             let days_of_month = [31, getfebdays(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, 30, 31]
-        }
-
-        let curDate =new Date()
-
-        month_picker.innerHTML = month_names[month]
-        calendar_header_year.innerHTML =year
-
-        let first_day =new Date (month, year, 1)
-
-
-        for(let i =0; index <= days_of_month[month] + first_day.getDay() - 1; i++){
-           let day =document.createElement('div')
-
-           if(i >= first-day.getDay()){
-            day.classList.add('calendar-day-hover')
-            day.innerHTML =i -first_day.getDay() + 1
-            // day.innerHTML += '<span></span>
-            //                  <span></span>
-            //                  <span></span>
-            //                   <span></span>'
         
-         
-                            }
+             let curDate = new Date()
+
+             month_picker.innerHTML = month_names[month]
+             calendar_header_year.innerHTML = year
+
+            let first_day = new Date(month, year, 1)
+       
+// creates a div for the days ..uses the first day as a refrence for the loop
+         for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) 
+         {
+            // creates a div for the new date
+            let day = document.createElement('div')
 
 
+
+
+            // creates a div for the respective no of day of month
+            if (i >= first_day.getDay()) {
+                // adds "calender-day-hover"class to the div
+                day.classList.add('calendar-day-hover')
+                day.innerHTML = i - first_day.getDay() + 1
+                // adds the lines on the new div
+                day.innerHTML += "<span></span> <span></span><span></span><span</span>"
+
+                if (i - first_day.getDay() + 1 === curDate.getDate() && year === curDate.getFullYear() && month === curDate.getMonth()) {
+                    day.classList.add('curr-date')
+                }
+
+            }
+            calendar_days.appendChild(day)
+      }
+}
+    
+    let month_list = calendar.querySelector('.month-list')
+
+       month_names.forEach((e, index) => {
+        let month = document.createElement('div')
+        month.innerHTML = '<div>${e}</div>'
+        month_list.appendChild(month)
+        month.onclick = () =>{
+            month_list.classList.remove('show')
+            curr_month.value = index
+            generatecalendar(curr_month.value, curr_year.value)
         }
-    }
-</script>
+      
+          
+    })
 
+    // makes the previous year button work
+document.querySelector('#prev-year').onclick = () =>{
+    --curr_year.value
+    generatecalendar(curr_month.value, curr_year.value)
+}
+
+// makes the next year button work
+document.querySelector('#next-year').onclick = () =>{
+    ++curr_year.value
+    generatecalendar(curr_month.value, curr_year.value)
+}
+
+// shows the current date month and year
+            let currDate = new Date()
+            let curr_month = {value: currDate.getMonth()}
+            let curr_year = {value: currDate.getFullYear()}
+    
+
+generatecalendar(curr_month.value, curr_year.value)
+
+</script>
+    
 </html>
