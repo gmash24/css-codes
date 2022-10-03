@@ -116,7 +116,10 @@
         }
 
         let calendar = document.querySelector('.calendar')
-        const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+        const month_names=["January",
+        "February", 
+        "March", "April", "May", "June", "July", "August", "September", "October", "November", 
+        'December']
 
         let month_picker = document.querySelector('#month-picker')
 
@@ -138,6 +141,7 @@
         
              let curDate = new Date()
 
+            // assigns month names to classes called month
              month_picker.innerHTML = month_names[month]
              calendar_header_year.innerHTML = year
 
@@ -169,18 +173,22 @@
       }
 }
     
-    let month_list = calendar.querySelector('.month-list')
+        let month_list = calendar.querySelector('.month-list')
 
-       month_names.forEach((e, index) => {
+       month_names.forEach((e, index) => 
+       {
         let month = document.createElement('div')
-        month.innerHTML = '<div>${e}</div>'
-        month_list.appendChild(month)
+        month.innerHTML = "<div> ${e} </div>"
+       
+
+
+        // when you click a month 
         month.onclick = () =>{
             month_list.classList.remove('show')
             curr_month.value = index
             generatecalendar(curr_month.value, curr_year.value)
         }
-      
+        month_list.appendChild(month)
           
     })
 
