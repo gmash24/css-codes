@@ -507,7 +507,7 @@
         }
 
         $(function () {
-            var numberofitems = $('.cardbox .card').length;
+            var numberofitems = $(".cardbox .card").length;
 
             var limitperpage = 3;
             var totalpages = Math.ceil(numberofitems / limitperpage);
@@ -529,8 +529,24 @@
                 });
 
 
-                $(".previous-page")
+                $(".previous-page").toggleClass("disable", currentpage === 1);
+                $(".next-page").toggleClass("disable", currentpage === totalpages);
+                return true;
             }
+
+                $(".pagination").append(
+                    $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}.text("Prev")),
+                        //next
+                        $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}.text("Next")))));
+
+                            $(".cardbox").show();
+                            showpage(1);
+
+                            $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+                                return showpage(+$(this).text());
+                            })
+
+
         });
 
     </script>
