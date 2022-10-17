@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" >
         <!-- navigation bar -->
-        <div class="navigation">
+        <div class="navigation" >
             <ul>
-                <li> <a href="#">
+                <li> <a href="#" onclick="showContent(event)">
                         <span class="icon">
                             <i class="fa fa-home" aria-hidden="true"></i>
                         </span>
@@ -75,9 +75,9 @@
         <div class="main">
             <div class="topbar">
                 <div class="toggle" onclick=toggleMenu();>
-                    
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    
+
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+
                 </div>
                 <div class="search">
                     <label>
@@ -182,7 +182,7 @@
 
 
                 </div>
-<!-- Tenants Profile -->
+                <!-- Tenants Profile -->
                 <div class="recenttenants">
                     <div class="cardheader">
                         <h2>Recent Tenants </h2>
@@ -252,7 +252,18 @@
         toggle.classList.toggle('active')
         navigation.classList.toggle('active')
         main.classList.toggle('active')
+    }
 
+
+    //change content on click in navbar
+    function showContent(ev) {
+        (ev || event).preventDefault();
+        var x = document.getElementById("container");
+        if (x.display === "none") {
+            x.display = "block";
+        } else {
+            x.style.display = "none";
+        }
     }
 </script>
 
