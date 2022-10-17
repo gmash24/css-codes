@@ -96,3 +96,9 @@ width: 45px;
 border-radius: 50%;
 cursor: pointer;
 }
+.active{
+    background: #0ab1ce;
+}
+.disable{
+    background: #ccc;
+}
